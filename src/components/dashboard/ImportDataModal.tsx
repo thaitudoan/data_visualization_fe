@@ -83,17 +83,17 @@ const ImportDataModal = ({
                 datasetName
             );
 
-            onDataImported({
-                id: result.datasetId,
-                name: result.datasetName,
-                type: result.sourceType,
-                data: result,
-                rows: result.totalRows,
-                columns: result.columns.length,
-                lastUpdated: result.createdAt,
-                createdBy: result.createdBy,
-                previewData: [],
-            });
+            // onDataImported({
+            //     id: result.datasetId,
+            //     name: result.datasetName,
+            //     type: result.sourceType,
+            //     data: result,
+            //     rows: result.totalRows,
+            //     columns: result.columns.length,
+            //     lastUpdated: result.createdAt,
+            //     createdBy: result.createdBy,
+            //     previewData: [],
+            // });
 
             toast.success("Dataset đã được import thành công!");
             onOpenChange();
@@ -155,17 +155,17 @@ const ImportDataModal = ({
 
             const result = await datasetService.importFromApi(apiParams);
 
-            onDataImported({
-                id: result.datasetId,
-                name: result.datasetName,
-                type: result.sourceType,
-                data: result,
-                rows: result.totalRows,
-                columns: result.columns.length,
-                lastUpdated: result.createdAt,
-                createdBy: result.createdBy,
-                previewData: [],
-            });
+            // onDataImported({
+            //     id: result.datasetId,
+            //     name: result.datasetName,
+            //     type: result.sourceType,
+            //     data: result,
+            //     rows: result.totalRows,
+            //     columns: result.columns.length,
+            //     lastUpdated: result.createdAt,
+            //     createdBy: result.createdBy,
+            //     previewData: [],
+            // });
 
             toast.success("Dataset từ API đã được import thành công!");
             onOpenChange();
